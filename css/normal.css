@@ -63,3 +63,14 @@ body {
   .your-gender {
     padding-top: 1.5rem;
   }
+
+  #sbutton {
+    margin-top: 1.3rem;
+    background: #e1ad01;
+    border: none;
+  }
+  
+  #sbutton:hover {
+    background: none;
+    border: 2px solid #e1ad01;
+  }
