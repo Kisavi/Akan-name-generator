@@ -30,3 +30,12 @@ body {
   .head-container p {
     font-size: 1.2rem;
   }
+
+  .form-1 {
+    background: rgba(229, 225, 192, 0.6);
+    padding: 1.4rem;
+    border-radius: 5px;
+    width: 50%;
+    height: 60vh;
+    font-size: 1.3rem;
+  }
