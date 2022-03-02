@@ -39,3 +39,27 @@ body {
     height: 60vh;
     font-size: 1.3rem;
   }
+
+  label {
+    display: block;
+  }
+  
+  input,
+  label {
+    margin: 0.3rem 0;
+  }
+  
+   h5 {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: black;
+    border-bottom: 1.3px solid black;
+  } 
+  
+  form p {
+    margin: 0.2rem 0 0.2rem 0;
+  }
+  
+  .your-gender {
+    padding-top: 1.5rem;
+  }
