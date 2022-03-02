@@ -22,3 +22,10 @@ function displayDate() {
         }
     }
 }
+
+function displayContainer() {
+    let o = document.getElementById("container1")
+    let q = document.getElementById("container2")
+    o.style.display = "none";
+    q.style.display = "block";
+}
