@@ -10,3 +10,23 @@ body {
     height: 100vh;
     overflow-x: hidden;
   }
+
+  .main-container {
+    background: rgba(229, 225, 192, 0.6);
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    margin-top: 0.6rem;
+   }
+
+   .head-container {
+    padding-top: 4rem;
+    color: black;
+  }
+  
+  .head-container h2 {
+    text-align: center;
+  }
+  
+  .head-container p {
+    font-size: 1.2rem;
+  }
