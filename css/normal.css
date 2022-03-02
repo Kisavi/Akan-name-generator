@@ -74,3 +74,9 @@ body {
     background: none;
     border: 2px solid #e1ad01;
   }
+
+  #message {
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
