@@ -29,3 +29,24 @@ function displayContainer() {
     o.style.display = "none";
     q.style.display = "block";
 }
+
+function checkDay(x) {
+    let isValidDate = Date.parse(x);
+    let date = new Date(isValidDate)
+    let d = date.getDate();
+    let m = date.getMonth() + 1;
+    let year = (date.getFullYear()).toString();
+    // console.log(d, m, year)
+    let c = year.substring(0, 2);
+    let y = year.substring(2, 4);
+    let index = date.getDay();
+    let z = document.getElementById("message")
+    z.innerHTML = (`You were born on ${days[index]} and your Akan name is ${femaleNames[index]}.`)
+
+
+    // console.log(`You were born on ${days[index]} and your Akan name is ${femaleNames[index]}.`)
+
+    //console.log(date.getDay());
+    // console.log(c, y);
+    // console.log(Math.floor((((c / 4) - 2 * c - 1) + ((5 * y / 4)) + ((26 * (m + 1) / 10)) + d) % 7));
+}
