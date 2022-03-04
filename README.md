@@ -36,10 +36,10 @@ This template is my portfolio and is dived into the following sections,
   ## Reference
   + Bootstrap 5
   
-Copyright [2022] [Denis Kisavi]
+  ## Licence
+  + MIT Licence
+  + Copyright [2022] [Denis Kisavi]
 
-## Authors info
-
-LinkedIn profile [Denis Kagunda] (https://www.linkedin.com/in/denis-kagunda-5a391612a/)
-
-Slack profile [Denis Kagunda] (https://app.slack.com/client/T0101L740P4/D02TFQE64MV/user_profile/U02TTFPL51B)
+  ## Authors info
+  + LinkedIn profile [Denis Kagunda] (https://www.linkedin.com/in/denis-kagunda-5a391612a/)
+  + Slack profile [Denis Kagunda] (https://app.slack.com/client/T0101L740P4/D02TFQE64MV/user_profile/U02TTFPL51B)
