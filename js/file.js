@@ -5,48 +5,29 @@ let genders = document.getElementsByClassName("gender")
 
 function displayDate() {
 
-    let x = document.forms["myForm"]["date"].value;
-    let p = document.forms["myForm"]["sex"].value;
+    let userDateInput = document.forms["myForm"]["date"].value;
+    let userSexInput = document.forms["myForm"]["sex"].value;
+    let z = document.getElementById("message")
+    let isValidDate = Date.parse(userDateInput);
+    let date = new Date(isValidDate)
+    let index = date.getDay();
 
-    if (x == "") {
+    if (x == "" && document.getElementById("flexRadioDefault1").checked) {
         alert("This is not a valid date format!!!");
-    }
-    //console.log(x)
-    //console.log(p)
-    checkDay(x);
+        return false;
+    } else if (x == "" && document.getElementById("flexRadioDefault2").checked) {
+        alert("This is not a valid date format!!")
+        return false;
+    } else if (x !== "" && document.getElementById("flexRadioDefault1").checked) {
+        z.innerHTML = (`You were born on ${days[index]} and your Akan name is ${maleNames[index]}.`)
+    } else {z.innerHTML = (`You were born on ${days[index]} and your Akan name is ${femaleNames[index]}.`)}
+    
     displayContainer();
-    for (let gender of genders) {
-        if (gender.checked) {
-            //console.log(gender.value)
-            return gender.value;
-        }
-    }
 }
 
 function displayContainer() {
-    let o = document.getElementById("container1")
-    let q = document.getElementById("container2")
-    o.style.display = "none";
-    q.style.display = "block";
-}
-
-function checkDay(x) {
-    let isValidDate = Date.parse(x);
-    let date = new Date(isValidDate)
-    let d = date.getDate();
-    let m = date.getMonth() + 1;
-    let year = (date.getFullYear()).toString();
-    // console.log(d, m, year)
-    let c = year.substring(0, 2);
-    let y = year.substring(2, 4);
-    let index = date.getDay();
-    let z = document.getElementById("message")
-    z.innerHTML = (`You were born on ${days[index]} and your Akan name is ${femaleNames[index]}.`)
-
-
-    // console.log(`You were born on ${days[index]} and your Akan name is ${femaleNames[index]}.`)
-
-    //console.log(date.getDay());
-    // console.log(c, y);
-    // console.log(Math.floor((((c / 4) - 2 * c - 1) + ((5 * y / 4)) + ((26 * (m + 1) / 10)) + d) % 7));
+    let x = document.getElementById("container1")
+    let y = document.getElementById("container2")
+    x.style.display = "none";
+    y.style.display = "block";
 }
