@@ -4,7 +4,7 @@ body {
   }
   
   .main {
-    background-image: linear-gradient(to bottom right, rgba(2, 2, 2, 0.3), rgba(0, 0, 0, 0.3)), url("/images/lion.jpg");
+    background-image: linear-gradient(to bottom right, rgba(2, 2, 2, 0.3), rgba(0, 0, 0, 0.3)), url("./images/lion.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -17,7 +17,7 @@ body {
     padding-bottom: 1rem;
     margin-top: 0.6rem;
    }
-
+/*header section container*/
    .head-container {
     padding-top: 4rem;
     color: black;
@@ -30,7 +30,7 @@ body {
   .head-container p {
     font-size: 1.2rem;
   }
-
+/*form section container*/
   .form-1 {
     background: rgba(229, 225, 192, 0.6);
     padding: 1.4rem;
@@ -74,7 +74,7 @@ body {
     background: none;
     border: 2px solid #e1ad01;
   }
-
+/*akan details paragraph*/
   #message {
     font-size: 1.7rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
