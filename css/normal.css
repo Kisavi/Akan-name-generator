@@ -4,7 +4,7 @@ body {
   }
   
   .main {
-    background-image: linear-gradient(to bottom right, rgba(2, 2, 2, 0.3), rgba(0, 0, 0, 0.3)), url("./images/lion.jpg");
+    background-image: linear-gradient(to bottom right, rgba(2, 2, 2, 0.3), rgba(0, 0, 0, 0.3)), url("../images/lion.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
