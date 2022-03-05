@@ -12,13 +12,13 @@ function displayDate() {
     let date = new Date(isValidDate)
     let index = date.getDay();
 //conditions to be checked in order to display the correct Akan details
-    if (x == "" && document.getElementById("flexRadioDefault1").checked) {
+    if (userDateInput == "" && document.getElementById("flexRadioDefault1").checked) {
         alert("This is not a valid date format!!!");
         return false;
-    } else if (x == "" && document.getElementById("flexRadioDefault2").checked) {
+    } else if (userDateInput == "" && document.getElementById("flexRadioDefault2").checked) {
         alert("This is not a valid date format!!")
         return false;
-    } else if (x !== "" && document.getElementById("flexRadioDefault1").checked) {
+    } else if (userDateInput !== "" && document.getElementById("flexRadioDefault1").checked) {
         outputParagraph.innerHTML = (`You were born on ${days[index]} and your Akan name is ${maleNames[index]}.`)
     } else {outputParagraph.innerHTML = (`You were born on ${days[index]} and your Akan name is ${femaleNames[index]}.`)}
     
